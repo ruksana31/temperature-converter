@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" href="styleTC.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🌡 Temperature Converter</h1>
+    </header>
+
+    <section class="content">
+      <label>Enter Temperature:
+        <input type="number" class="data" placeholder="e.g. 100" />
+      </label>
+
+      <label>From:
+        <select class="data2">
+          <option value="Celsius" selected>Celsius</option>
+          <option value="Fahrenheit">Fahrenheit</option>
+        </select>
+      </label>
+
+      <label>To:
+        <select class="data3">
+          <option value="Celsius">Celsius</option>
+          <option value="Fahrenheit" selected>Fahrenheit</option>
+        </select>
+      </label>
+
+      <div class="buttons">
+        <button onclick="convert()">Convert</button>
+        <button onclick="resetForm()" class="reset">Reset</button>
+      </div>
+
+      <p id="result">Result:</p>
+    </section>
+
+    <footer>
+      Made with 💜 by Shaik Ruksana © 2025
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
